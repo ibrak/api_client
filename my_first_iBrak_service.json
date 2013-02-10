@@ -1,0 +1,8 @@
+{
+	"user": "demo-api-user",
+	"passwd": "demo-api-password",
+	"service": "MyService_1",
+	"type": "PDFReader.1",
+	"name": "Ma première brochure",
+	"description": "..."
+}
