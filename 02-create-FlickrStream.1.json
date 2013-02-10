@@ -1,0 +1,10 @@
+{
+  "user": "demo-api-user",
+  "passwd": "demo-api-password",
+  "service": "MyFlickrStream.1-1",
+  "type": "FlickrStream.1",
+  "name": "Explore",
+  "description": "Architecture & Buildings",
+  "flickr-nsid": "59549338@N04",
+  "flickr-set": "72157627602086045"
+}
