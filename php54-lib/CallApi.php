@@ -37,14 +37,14 @@ $json2["service"] = "My2ndService";
 $json2["type"] = "PDFReader.1";
 $json2["name"] = "Wrong Name";
 $json2["description"] = "no description";
-//iBrakAPI_action($json2, "create", "@./jet-tours.pdf");
+//iBrakAPI_action($json2, "create", "@./docs/jet-tours.pdf");
 iBrakAPI_action($json2, "update");
 
 // Modify My2ndService and add a sammary
 $json3 = $json2;
 $json3["name"] = "Jet tours";
 $json3["description"] = "Catalogue Eté 2013";
-$json3["summary"] = json_decode(file_get_contents('./jet-tours.json'));
+$json3["summary"] = json_decode(file_get_contents('./docs/jet-tours.json'));
 iBrakAPI_action($json3, "update");
 
 // Create another PDFReader. Add summary.
@@ -53,8 +53,8 @@ $json4["service"] = "My3rdService";
 $json4["type"] = "PDFReader.1";
 $json4["name"] = "Jet tours";
 $json4["description"] = "Catalogue Spa et Thalasso";
-$json4["summary"] = json_decode(file_get_contents('./jet-tours-spas-et-thalasso.json'));
-//iBrakAPI_action($json4, "create", "@./jet-tours-spas-et-thalasso.pdf");
+$json4["summary"] = json_decode(file_get_contents('./docs/jet-tours-spas-et-thalasso.json'));
+//iBrakAPI_action($json4, "create", "@./docs/jet-tours-spas-et-thalasso.pdf");
 iBrakAPI_action($json4, "update");
 
 $json5 = $json;
@@ -62,7 +62,7 @@ $json5["service"] = "CatalogueCrisalidi";
 $json5["type"] = "PDFReader.1";
 $json5["name"] = "Crisalidi Design";
 $json5["description"] = "Catalogue Crisalidi 2013";
-//iBrakAPI_action($json5, "create", "@./crisalidi.pdf");
+//iBrakAPI_action($json5, "create", "@./docs/crisalidi.pdf");
 iBrakAPI_action($json5, "update");
 
 // List all Sercices

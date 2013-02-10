@@ -15,8 +15,8 @@ function do_post_request($url, $json, $filedata = null, $optional_headers = null
 echo "\n Curl ".$url."\n";
 $jsonString = json_encode($json, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 if ($filedata != null)
-  return shell_exec("curl -k -F 'json=".$jsonString."' -F filedata='".$filedata."' ".$url);
-return shell_exec("curl -k -F 'json=".$jsonString."' ".$url);
+  return shell_exec("curl -F 'json=".$jsonString."' -F filedata='".$filedata."' ".$url);
+return shell_exec("curl -F 'json=".$jsonString."' ".$url);
 }
 
 function iBrakAPI_action($json, $action, $filedata = null) {
